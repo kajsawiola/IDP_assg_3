@@ -61,6 +61,11 @@ namespace Dag_15_inlamning
             {
                 i.Print();
             }
+            
+            foreach (var i in alla)
+            {
+                Console.WriteLine(i.namn);
+            }
         }
     }
 }
