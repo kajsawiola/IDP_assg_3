@@ -4,9 +4,18 @@
     {
 
     }
-    
+     
     class Element
     {
+        public void Print()
+        {
+            Console.WriteLine($"Grundämne: {namn}");
+            Console.WriteLine($"Atomnummer: {Z}");
+            Console.WriteLine($"Typ: {typ}");
+            Console.WriteLine($"Smältpunkt: {smältpunkt}");
+            Console.WriteLine($"Kokpunkt: {kokpunkt}");
+        }
+        
         public string namn, Z, typ, smältpunkt, kokpunkt;
         static void Main(string[] args)
         {
@@ -35,6 +44,11 @@
                 smältpunkt = "1337.33",
                 kokpunkt = "3243"
             };
+            syre.Print();
+
+            järn.Print();
+
+            guld.Print();
         }
     }
 }
