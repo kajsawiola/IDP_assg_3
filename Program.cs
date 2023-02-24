@@ -64,7 +64,8 @@ namespace Dag_15_inlamning
             
             foreach (var i in alla)
             {
-                Console.WriteLine(i.namn);
+               if (i.typ == "metall")
+                    Console.WriteLine(i.namn);
             }
         }
     }
