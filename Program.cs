@@ -55,7 +55,12 @@ namespace Dag_15_inlamning
             Element[] alla= new Element[6] { syre, järn, guld, null, null, null };
             alla[3] = new Element() { namn = "väte", Z = "1", typ = "ickemetall", smältpunkt = "13.99", kokpunkt = "20.271" };
             alla[4] = new Element() { namn = "brom", Z = "35", typ = "ickemetall", smältpunkt = "265.8", kokpunkt = "332.0" };
-            alla[4] = new Element() { namn = "kvicksilver", Z = "80", typ = "metall", smältpunkt = "234.3210", kokpunkt = "629.88" };
+            alla[5] = new Element() { namn = "kvicksilver", Z = "80", typ = "metall", smältpunkt = "234.3210", kokpunkt = "629.88" };
+
+            foreach (Element i in alla) 
+            {
+                i.Print();
+            }
         }
     }
 }
